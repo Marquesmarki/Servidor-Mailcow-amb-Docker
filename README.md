@@ -91,7 +91,7 @@ Repositori: `mailcow-dockerized`.
 - `mailcow.conf` personalitzat per al domini `alexmarques.local`
 - Ajustos de xarxa/ports segons l’entorn
 <img width="944" height="203" alt="image" src="https://github.com/user-attachments/assets/b0d9011d-03df-4882-a598-d1cc700a7aac" />
-<img width="800" height="203" alt="image" src="https://github.com/user-attachments/assets/4aa09003-d50d-4d69-876f-43bc142655fa" />
+<img width="650" height="203" alt="image" src="https://github.com/user-attachments/assets/4aa09003-d50d-4d69-876f-43bc142655fa" />
 
 
 ### 4.3 Arrencada de serveis

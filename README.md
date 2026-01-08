@@ -5,7 +5,7 @@ Documentació del desplegament d’un servidor de correu complet amb Mailcow uti
 Autor: Alex Marques
 Data: 2026/01/08 
 Repositori: Servidor-Mailcow-amb-Docker  
-Domini: AlexMarques.local
+Domini: alexmarques.local
 
 ## Índex
 
@@ -28,7 +28,7 @@ Domini: AlexMarques.local
 
 ## 1. Objectiu
 
-Desplegar Mailcow amb Docker Compose i deixar un servidor de correu funcional per al domini `NOMCOGNOM.local`, amb mínim 3 usuaris, enviament/recepció operatius, i configuració i documentació de SPF, DKIM i DMARC. S’ha d’aportar evidència amb captures personalitzades (nom visible) i fitxers de configuració (sense contrasenyes en clar).
+Desplegar Mailcow amb Docker Compose i deixar un servidor de correu funcional per al domini `alexmarques.local`, amb mínim 3 usuaris, enviament/recepció operatius, i configuració i documentació de SPF, DKIM i DMARC. S’ha d’aportar evidència amb captures personalitzades (nom visible) i fitxers de configuració (sense contrasenyes en clar).
 
 ---
 
@@ -49,7 +49,7 @@ Desplegar Mailcow amb Docker Compose i deixar un servidor de correu funcional pe
 
 ### Penalitzacions
 
-- -2,0 punts si no hi ha personalització amb `NOMCOGNOM`
+- -2,0 punts si no hi ha personalització amb `alexmarques`
 - -1,5 punts si DKIM no està configurat o no funciona
 - -1,0 punt si no es poden enviar/rebre correus entre usuaris
 - -0,5 punts si contrasenyes no amagades al document lliurat
@@ -67,7 +67,7 @@ Desplegar Mailcow amb Docker Compose i deixar un servidor de correu funcional pe
 - Sistema: Ubuntu (WSL2 o VM)  
 - Docker i Docker Compose instal·lats
 - Portes i accés local segons requeriments de la pràctica
-- Domini de laboratori: `NOMCOGNOM.local`
+- Domini de laboratori: `alexmarques.local`
 
 Notes:
 - Si s’utilitza `.local`, és un domini de laboratori. Les proves DNS s’han de documentar igualment amb els registres generats (encara que no es publiquin a internet).
@@ -79,12 +79,12 @@ Notes:
 
 ### 4.1 Obtenció del repositori
 
-Carpeta de treball: `mailcow-NOMCOGNOM` (o similar).  
+Carpeta de treball: `mailcow-alexmarques` (o similar).  
 Repositori: `mailcow-dockerized`.
 
 ### 4.2 Configuració bàsica
 
-- `mailcow.conf` personalitzat per al domini `NOMCOGNOM.local`
+- `mailcow.conf` personalitzat per al domini `alexmarques.local`
 - Ajustos de xarxa/ports segons l’entorn
 
 ### 4.3 Arrencada de serveis
@@ -99,8 +99,8 @@ Evidència obligatòria:
 ## 5. Personalització obligatòria
 
 S’ha de personalitzar com a mínim:
-- Domini: `NOMCOGNOM.local`
-- 3 mailboxes: `VOSTRENOM1@NOMCOGNOM.local`, `VOSTRENOM2@NOMCOGNOM.local`, `VOSTRENOM3@NOMCOGNOM.local` (amb els vostres noms)
+- Domini: `alexmarques.local`
+- 3 mailboxes: `VOSTRENOM1@alexmarques.local`, `VOSTRENOM2@alexmarques.local`, `VOSTRENOM3@alexmarques.local` (amb els vostres noms)
 - Captures amb el nom complet visible a la sessió o a l’escriptori quan es pugui
 
 ---
@@ -113,7 +113,7 @@ En aquest apartat s’han d’incloure els registres generats i una breu explica
 
 Registre (exemple; substituir pel que generi Mailcow o el vostre escenari):
 - Tipus: TXT
-- Nom/Host: `NOMCOGNOM.local`
+- Nom/Host: `alexmarques.local`
 - Valor: `v=spf1 ... -all`
 
 Explicació:
@@ -126,7 +126,7 @@ Evidència obligatòria:
 
 Registre:
 - Tipus: TXT
-- Nom/Host: `selector._domainkey.NOMCOGNOM.local`
+- Nom/Host: `selector._domainkey.alexmarques.local`
 - Valor: `v=DKIM1; k=rsa; p=...`
 
 Explicació:
@@ -136,7 +136,7 @@ Explicació:
 
 Registre:
 - Tipus: TXT
-- Nom/Host: `_dmarc.NOMCOGNOM.local`
+- Nom/Host: `_dmarc.alexmarques.local`
 - Valor: `v=DMARC1; p=none/quarantine/reject; rua=mailto:...`
 
 Explicació:
@@ -164,7 +164,7 @@ Guardar totes les captures dins `captures/` i referenciar-les aquí.
 1) docker-compose ps mostrant tots els contenidors Mailcow en running/healthy  
 Imatge: `captures/01_docker_compose_ps.png`
 
-2) Interfície web d'administració mostrant el domini NOMCOGNOM.local creat  
+2) Interfície web d'administració mostrant el domini alexmarques.local creat  
 Imatge: `captures/02_admin_domini.png`
 
 3) Llista de mailboxes amb els 3 usuaris creats (amb els teus noms)  
@@ -173,7 +173,7 @@ Imatge: `captures/03_mailboxes.png`
 4) Configuració DKIM mostrant la clau pública generada  
 Imatge: `captures/04_dkim_public_key.png`
 
-5) Thunderbird configurat amb el compte VOSTRENOM1@NOMCOGNOM.local  
+5) Thunderbird configurat amb el compte VOSTRENOM1@alexmarques.local  
 Imatge: `captures/05_thunderbird_config.png`
 
 6) Correu rebut a la safata d'entrada mostrant el teu nom complet  
@@ -326,10 +326,10 @@ Text:
 - Repo públic amb GitHub Pages actiu
 - README amb tota la documentació en una sola pàgina
 - Captura docker-compose ps (running/healthy)
-- Admin UI: domini NOMCOGNOM.local creat
+- Admin UI: domini alexmarques.local creat
 - 3 mailboxes creats amb els vostres noms
 - DKIM configurat i clau pública documentada
-- Thunderbird configurat amb VOSTRENOM1@NOMCOGNOM.local
+- Thunderbird configurat amb VOSTRENOM1@alexmarques.local
 - Correu rebut amb el nom complet visible
 - Headers amb DKIM-Signature i X-Rspamd-Score
 - SOGo: sessió iniciada i correu visible

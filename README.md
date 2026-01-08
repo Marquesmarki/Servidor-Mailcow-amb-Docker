@@ -98,8 +98,7 @@ Repositori: `mailcow-dockerized`.
 
 Objectiu: tenir tots els contenidors en estat `running` i `healthy`.
 
-Evidència obligatòria:
-- captura de `docker-compose ps` amb tots els contenidors `running/healthy`
+<img width="1911" height="931" alt="image" src="https://github.com/user-attachments/assets/e1589676-1261-4410-b8ee-8e5c708fc88a" />
 
 ---
 

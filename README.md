@@ -2,8 +2,8 @@
 
 Documentació del desplegament d’un servidor de correu complet amb Mailcow utilitzant Docker Compose.
 
-Autor: NOM I COGNOMS  
-Data: YYYY-MM-DD  
+Autor: Alex Marques
+Data: 2026/01/08 
 Repositori: Servidor-Mailcow-amb-Docker  
 Domini: AlexMarques.local
 

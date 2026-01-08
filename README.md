@@ -5,7 +5,7 @@ Documentació del desplegament d’un servidor de correu complet amb Mailcow uti
 Autor: NOM I COGNOMS  
 Data: YYYY-MM-DD  
 Repositori: Servidor-Mailcow-amb-Docker  
-Domini: NOMCOGNOM.local
+Domini: AlexMarques.local
 
 ## Índex
 

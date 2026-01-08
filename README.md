@@ -66,6 +66,7 @@ Desplegar Mailcow amb Docker Compose i deixar un servidor de correu funcional pe
 
 - Sistema: Ubuntu (WSL2 o VM)  
 - Docker i Docker Compose instal·lats
+  <img width="647" height="136" alt="image" src="https://github.com/user-attachments/assets/8e302f97-ce99-4650-9539-84204fd85e9c" />
 - Portes i accés local segons requeriments de la pràctica
 - Domini de laboratori: `alexmarques.local`
 
@@ -79,8 +80,10 @@ Notes:
 
 ### 4.1 Obtenció del repositori
 
-Carpeta de treball: `mailcow-alexmarques` (o similar).  
+Carpeta de treball: `mailcow-alexmarques`.  
 Repositori: `mailcow-dockerized`.
+<img width="945" height="193" alt="image" src="https://github.com/user-attachments/assets/ca6849c5-6028-4e75-be9e-3706b6fa51bd" />
+
 
 ### 4.2 Configuració bàsica
 

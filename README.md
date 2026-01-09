@@ -120,25 +120,21 @@ S’ha de personalitzar com a mínim:
 
 En aquest apartat s’han d’incloure els registres generats i una breu explicació de què fa cadascun.
 
+<img width="990" height="448" alt="image" src="https://github.com/user-attachments/assets/0be7564b-7b1f-4acc-b989-174cf64a2efd" />
+
 ### 6.1 SPF
 
-Registre (exemple; substituir pel que generi Mailcow o el vostre escenari):
-- Tipus: TXT
-- Nom/Host: `alexmarques.local`
-- Valor: `v=spf1 ... -all`
+Registre:
+- `alexmarques.local. IN TXT "v=spf1 mx ~all"`
 
 Explicació:
 - SPF defineix quins servidors poden enviar correu en nom del domini.
 
 ### 6.2 DKIM
 
-Evidència obligatòria:
-- captura de configuració DKIM mostrant la clau pública generada
-
 Registre:
-- Tipus: TXT
-- Nom/Host: `selector._domainkey.alexmarques.local`
-- Valor: `v=DKIM1; k=rsa; p=...`
+`dkim._domainkey.alexmarques.local. IN TXT "v=DKIM1;k=rsa;t=s;s=email;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvOhIzBk5mvg5WVMoDUK7LIqYIbdKvi/ID+voXYrt1sZJBpYjaedB8HAAnn5KbdjNEGwPi9B2lupQGsBQqOPnjjW54ROXvBDUAWE+IN984C4cXXBtxJuP8hnuLmg5vxQeTEmquBFFb0i7+Zr3uJH6QNn1FtjG8r5BhM8ujTu5jD/WAh+NCe3LSNyZMks18cTJ5ZFpX9LyZRcChTjyhpEjlGJ7hzCEqVVZvrUurtzUQW/K3zKWbuibGrQTd43g20ekzjsYE/bmWKvUC2owSUlLePIEJBiMF2nWIWtq7PiDdPbyDJeI/40YNhaYf4M1wkDn9ErrNYijIn1MPl3SZgSNHwIDAQAB"
+`
 
 Explicació:
 - DKIM signa els correus i permet verificar que el missatge no s’ha modificat i que prové d’un servidor autoritzat.
@@ -146,9 +142,7 @@ Explicació:
 ### 6.3 DMARC
 
 Registre:
-- Tipus: TXT
-- Nom/Host: `_dmarc.alexmarques.local`
-- Valor: `v=DMARC1; p=none/quarantine/reject; rua=mailto:...`
+- `_dmarc.alexmarques.local. IN TXT "v=DMARC1; p=quarantine; rua=mailto:admin@alexmarques.local"`
 
 Explicació:
 - DMARC defineix la política quan SPF/DKIM fallen i proporciona reporting.

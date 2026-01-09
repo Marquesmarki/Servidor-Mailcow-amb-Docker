@@ -114,7 +114,7 @@ S’ha de personalitzar com a mínim:
 
 En aquest apartat s’han d’incloure els registres generats i una breu explicació de què fa cadascun.
 
-<img width="990" height="448" alt="image" src="https://github.com/user-attachments/assets/0be7564b-7b1f-4acc-b989-174cf64a2efd" />
+<img src="https://github.com/user-attachments/assets/0be7564b-7b1f-4acc-b989-174cf64a2efd" />
 
 ### 6.1 SPF
 
@@ -153,10 +153,10 @@ Objectiu:
 Funcionalitats Avançades
 1. Ves a Mailboxes → Edita un usuari
 2. Canvia la quota a 256 MB
-   <img width="1170" height="288" alt="image" src="https://github.com/user-attachments/assets/d1747861-622b-4c4f-8e78-d34c79472f54" />
+   <img src="https://github.com/user-attachments/assets/d1747861-622b-4c4f-8e78-d34c79472f54" />
 
 3. Intenta enviar correus amb adjunts grans per provar el límit
-   <img width="1073" height="832" alt="image" src="https://github.com/user-attachments/assets/9a0cc37f-5a86-4fa6-8fad-43439708c7e3" />
+   <img src="https://github.com/user-attachments/assets/9a0cc37f-5a86-4fa6-8fad-43439708c7e3" />
 
 ---
 
@@ -197,34 +197,34 @@ Imatge: `captures/10_sql_users.png`
 (Quan tinguis les imatges, pots incrustar-les així:)
 
 - docker-compose ps  
-<img width="1911" height="931" alt="image" src="https://github.com/user-attachments/assets/e8daad61-6da8-46c3-b6a1-38015fb2fbd6" />
+<img src="https://github.com/user-attachments/assets/e8daad61-6da8-46c3-b6a1-38015fb2fbd6" />
 
 - Admin domini  
-<img width="1011" height="473" alt="image" src="https://github.com/user-attachments/assets/8bebbe96-4e5c-43c4-8588-8adae8cd6ba0" />
+<img src="https://github.com/user-attachments/assets/8bebbe96-4e5c-43c4-8588-8adae8cd6ba0" />
 
 - Mailboxes  
-<img width="1042" height="571" alt="image" src="https://github.com/user-attachments/assets/935f1afe-ad69-438a-b1f8-a5514ca47ac6" />
+<img src="https://github.com/user-attachments/assets/935f1afe-ad69-438a-b1f8-a5514ca47ac6" />
 
 - DKIM  
-<img width="990" height="448" alt="image" src="https://github.com/user-attachments/assets/4cbbf3b4-19b5-4d7f-979a-f171a7a83822" />
+<img src="https://github.com/user-attachments/assets/4cbbf3b4-19b5-4d7f-979a-f171a7a83822" />
 
 - Thunderbird  
-<img width="1255" height="974" alt="image" src="https://github.com/user-attachments/assets/81d712fe-d277-4e38-90de-30f9a2c4b2f4" />
+<imgsrc="https://github.com/user-attachments/assets/81d712fe-d277-4e38-90de-30f9a2c4b2f4" />
 
 - Inbox  
-<img width="1257" height="304" alt="image" src="https://github.com/user-attachments/assets/71cc5f5c-de54-4888-922e-75692304cf68" />
+<img src="https://github.com/user-attachments/assets/71cc5f5c-de54-4888-922e-75692304cf68" />
 
 - Àlies
-<img width="1262" height="329" alt="image" src="https://github.com/user-attachments/assets/45ee23bc-083a-4537-bca8-09dc595cfebc" />
+<img src="https://github.com/user-attachments/assets/45ee23bc-083a-4537-bca8-09dc595cfebc" />
 
 - Headers  
-<img width="1257" height="1017" alt="image" src="https://github.com/user-attachments/assets/a4141244-13e8-46bd-bb34-a677ef67e0df" />
+<img src="https://github.com/user-attachments/assets/a4141244-13e8-46bd-bb34-a677ef67e0df" />
 
 - Postfix logs  
-<img width="1257" height="1017" alt="image" src="https://github.com/user-attachments/assets/ee5f0827-1c11-4897-82a2-c8e321008e7e" />
+<img src="https://github.com/user-attachments/assets/ee5f0827-1c11-4897-82a2-c8e321008e7e" />
 
 - SQL users i àlies
-<img width="772" height="483" alt="image" src="https://github.com/user-attachments/assets/fcc14b91-11ca-4a31-b586-e31cc12c465c" />
+<img src="https://github.com/user-attachments/assets/fcc14b91-11ca-4a31-b586-e31cc12c465c" />
 
 
 ---

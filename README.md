@@ -73,7 +73,6 @@ Desplegar Mailcow amb Docker Compose i deixar un servidor de correu funcional pe
 
 Notes:
 - Si s’utilitza `.local`, és un domini de laboratori. Les proves DNS s’han de documentar igualment amb els registres generats (encara que no es publiquin a internet).
-- Si el professor demana DNS “real”, s’ha d’usar un domini propi o un subdomini d’un DNS controlat i publicar els registres.
 
 ---
 

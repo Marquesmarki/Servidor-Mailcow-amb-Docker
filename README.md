@@ -275,34 +275,14 @@ Explicació:
 
 ## 13. Reflexió final (250-350 paraules)
 
-(Escriu aquí la reflexió final amb 250-350 paraules. Ha d’incloure obligatòriament:)
+En aquesta pràctica he pogut muntar un servidor de correu complet amb Mailcow utilitzant Docker Compose, i la veritat és que m’ha ajudat a entendre millor com funciona un servei de correu  en un entorn semblant al d’una empresa. El que m’ha agradat més de Mailcow és que integra tots els components necessaris (Postfix, Dovecot, Rspamd, webmail, base de dades, etc.) i els deixa gestionats des d’una sola interfície. Si hagués hagut de configurar cada servei manualment, hauria estat molt més llarg i amb més punts on equivocar-me, sobretot amb certificats, ports i integració entre serveis.
 
-- Avantatges de Mailcow respecte a configurar cada component manualment
-- Importància de SPF, DKIM i DMARC en l’actualitat
-- Diferències entre webmail i client de correu tradicional
-- Desafiaments trobats durant la pràctica
-- Possibles millores o configuracions addicionals
+Una part important ha estat la configuració d’SPF, DKIM i DMARC. Abans ho veia com “tres registres DNS i ja”, però ara entenc que són essencials per evitar suplantacions i perquè els correus no acabin a spam. SPF ajuda a definir quins servidors poden enviar per un domini, DKIM assegura la integritat del missatge amb una signatura, i DMARC uneix tot plegat amb una política clara quan alguna cosa falla. Mirar els headers i veure la DKIM-Signature i el X-Rspamd-Score m’ha servit per comprovar que realment funciona i no és només teoria.
 
-Text:
+També he vist diferències entre usar webmail (SOGo) i un client com Thunderbird. El webmail és molt ràpid per entrar des de qualsevol lloc i no depens d’instal·lar res, però Thunderbird és més còmode per treballar amb diversos comptes, tenir-ho tot sincronitzat i gestionar millor carpetes i filtres.
 
-[ESCRIU AQUÍ LA TEVA REFLEXIÓ (250-350 paraules)]
+Els principals problemes han estat petits detalls: configuració de domini local, ajustar coses de Docker, i revisar bé captures i evidències perquè el treball quedi complet. Com a millores futures, afegiria regles Sieve per automatitzar filtres, provar greylisting més a fons i fer una documentació encara més ordenada per a l’entrega final.
 
----
-
-## 14. Checklist final d’entrega
-
-- Repo públic amb GitHub Pages actiu
-- README amb tota la documentació en una sola pàgina
-- Captura docker-compose ps (running/healthy)
-- Admin UI: domini alexmarques.local creat
-- 3 mailboxes creats amb els vostres noms
-- DKIM configurat i clau pública documentada
-- Thunderbird configurat amb VOSTRENOM1@alexmarques.local
-- Correu rebut amb el nom complet visible
-- Headers amb DKIM-Signature i X-Rspamd-Score
-- SOGo: sessió iniciada i correu visible
-- Logs Postfix d’enviament
-- Consulta SQL d’usuaris
 - files/mailcow.conf amb contrasenyes amagades
 - Captura de docker-compose.yml (primeres 50 línies)
 - (Si es demana) PDF final amb portada, captures, DNS, respostes i reflexió

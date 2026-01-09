@@ -99,6 +99,10 @@ Objectiu: tenir tots els contenidors en estat `running` i `healthy`.
 
 <img width="1911" height="931" alt="image" src="https://github.com/user-attachments/assets/e1589676-1261-4410-b8ee-8e5c708fc88a" />
 
+Imatge de meu mailcow funcionant amb el meu usuari `admin-alexmarques`.
+
+<img width="1919" height="962" alt="image" src="https://github.com/user-attachments/assets/49b5fc16-bf60-43e4-995f-c285005f4f23" />
+
 ---
 
 ## 5. Personalització obligatòria

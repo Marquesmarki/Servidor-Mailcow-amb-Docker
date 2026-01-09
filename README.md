@@ -114,8 +114,6 @@ S’ha de personalitzar com a mínim:
 
 En aquest apartat s’han d’incloure els registres generats i una breu explicació de què fa cadascun.
 
-<img src="https://github.com/user-attachments/assets/0be7564b-7b1f-4acc-b989-174cf64a2efd" />
-
 ### 6.1 SPF
 
 Registre:
@@ -161,40 +159,6 @@ Funcionalitats Avançades
 ---
 
 ## 8. Captures de pantalla obligatòries
-
-Guardar totes les captures dins `captures/` i referenciar-les aquí.
-
-1) docker-compose ps mostrant tots els contenidors Mailcow en running/healthy  
-Imatge: `captures/01_docker_compose_ps.png`
-
-2) Interfície web d'administració mostrant el domini alexmarques.local creat  
-Imatge: `captures/02_admin_domini.png`
-
-3) Llista de mailboxes amb els 3 usuaris creats (amb els teus noms)  
-Imatge: `captures/03_mailboxes.png`
-
-4) Configuració DKIM mostrant la clau pública generada  
-Imatge: `captures/04_dkim_public_key.png`
-
-5) Thunderbird configurat amb el compte VOSTRENOM1@alexmarques.local  
-Imatge: `captures/05_thunderbird_config.png`
-
-6) Correu rebut a la safata d'entrada mostrant el teu nom complet  
-Imatge: `captures/06_inbox_nom.png`
-
-7) Headers del correu mostrant DKIM-Signature i X-Rspamd-Score  
-Imatge: `captures/07_headers_dkim_rspamd.png`
-
-8) Webmail SOGo amb sessió iniciada i correu visible  
-Imatge: `captures/08_sogo_ok.png`
-
-9) Logs de Postfix mostrant l'enviament d'un correu  
-Imatge: `captures/09_postfix_logs.png`
-
-10) Consulta SQL mostrant els usuaris de la base de dades  
-Imatge: `captures/10_sql_users.png`
-
-(Quan tinguis les imatges, pots incrustar-les així:)
 
 - docker-compose ps  
 <img src="https://github.com/user-attachments/assets/e8daad61-6da8-46c3-b6a1-38015fb2fbd6" />

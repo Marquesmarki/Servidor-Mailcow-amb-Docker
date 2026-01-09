@@ -3,66 +3,61 @@
 
 @import "{{ site.theme }}";
 
-/* ===== FULL WIDTH LAYOUT ===== */
-.page-header,
-.main-content,
-.site-footer {
-  max-width: 100% !important;
-  width: 100% !important;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-/* Mejor lectura en pantallas grandes */
-@media screen and (min-width: 1200px) {
-  .main-content {
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
-}
-
-/* Móvil: que no se vea apretado */
-@media screen and (max-width: 768px) {
-  .main-content {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-
-/* Evitar columnas estrechas */
-.main-content > * {
-  max-width: 100%;
-}
-
-/* ===== FIX BARRA HORIZONTAL (overflow-x) ===== */
+/* 1) Evitar barra horizontal global */
 html, body {
+  width: 100%;
   max-width: 100%;
   overflow-x: hidden;
 }
 
-.page-header,
-.main-content,
-.site-footer {
-  box-sizing: border-box; /* clave: padding no suma ancho */
-  max-width: 100% !important;
+/* 2) Box-sizing global (clave para que padding no sume ancho) */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 3) Forzar wrappers del tema Midnight a ancho completo */
+.inner,
+#main_content_wrap,
+#main_content,
+#footer_wrap,
+#header_wrap {
   width: 100% !important;
+  max-width: 100% !important;
 }
 
-/* Por si algún elemento (código/links) se va de ancho */
-.main-content * {
-  max-width: 100%;
+/* 4) Dar padding cómodo sin romper el ancho */
+.inner {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
 }
 
-.main-content a {
+/* Pantallas grandes: más aire */
+@media screen and (min-width: 1200px) {
+  .inner {
+    padding-left: 6rem !important;
+    padding-right: 6rem !important;
+  }
+}
+
+/* Móvil: padding pequeño */
+@media screen and (max-width: 768px) {
+  .inner {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+/* 5) Romper links largos / tablas / texto */
+a, p, li, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: anywhere;
   word-break: break-word;
 }
 
-/* El código mejor con scroll propio, no el de toda la página */
-pre, code {
-  max-width: 100%;
-}
+/* 6) Código: scroll SOLO dentro del bloque, no en toda la página */
 pre {
+  max-width: 100%;
   overflow-x: auto;
 }
-
+code {
+  max-width: 100%;
+}

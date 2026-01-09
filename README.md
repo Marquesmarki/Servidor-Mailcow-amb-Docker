@@ -82,15 +82,15 @@ Notes:
 
 Carpeta de treball: `mailcow-alexmarques`.  
 Repositori: `mailcow-dockerized`.
-<img width="945" height="193" alt="image" src="https://github.com/user-attachments/assets/ca6849c5-6028-4e75-be9e-3706b6fa51bd" />
+<img src="https://github.com/user-attachments/assets/ca6849c5-6028-4e75-be9e-3706b6fa51bd" />
 
 
 ### 4.2 Configuració bàsica
 
 - `mailcow.conf` personalitzat per al domini `alexmarques.local`
 - Ajustos de xarxa/ports segons l’entorn
-<img width="944" height="203" alt="image" src="https://github.com/user-attachments/assets/b0d9011d-03df-4882-a598-d1cc700a7aac" />
-<img width="650" height="203" alt="image" src="https://github.com/user-attachments/assets/4aa09003-d50d-4d69-876f-43bc142655fa" />
+<img src="https://github.com/user-attachments/assets/b0d9011d-03df-4882-a598-d1cc700a7aac" />
+<img src="https://github.com/user-attachments/assets/4aa09003-d50d-4d69-876f-43bc142655fa" />
 
 
 ### 4.3 Arrencada de serveis
@@ -98,7 +98,7 @@ Repositori: `mailcow-dockerized`.
 Objectiu: tenir tots els contenidors en estat `running` i `healthy`.
 Imatge de meu mailcow funcionant amb el meu usuari `admin-alexmarques`.
 
-<img width="1919" height="962" alt="image" src="https://github.com/user-attachments/assets/49b5fc16-bf60-43e4-995f-c285005f4f23" />
+<img src="https://github.com/user-attachments/assets/49b5fc16-bf60-43e4-995f-c285005f4f23" />
 
 ---
 

@@ -96,9 +96,6 @@ Repositori: `mailcow-dockerized`.
 ### 4.3 Arrencada de serveis
 
 Objectiu: tenir tots els contenidors en estat `running` i `healthy`.
-
-<img width="1911" height="931" alt="image" src="https://github.com/user-attachments/assets/e1589676-1261-4410-b8ee-8e5c708fc88a" />
-
 Imatge de meu mailcow funcionant amb el meu usuari `admin-alexmarques`.
 
 <img width="1919" height="962" alt="image" src="https://github.com/user-attachments/assets/49b5fc16-bf60-43e4-995f-c285005f4f23" />
@@ -109,11 +106,8 @@ Imatge de meu mailcow funcionant amb el meu usuari `admin-alexmarques`.
 
 S’ha de personalitzar com a mínim:
 - Domini: `alexmarques.local`
-  <img width="1011" height="473" alt="image" src="https://github.com/user-attachments/assets/99da67ea-97f5-4432-b07a-b7e5f64910be" />
+- 3 mailboxes: `alexmarques1@alexmarques.local`, `alexmarques2@alexmarques.local`, `alexmarques3@alexmarques.local`
   
-- 3 mailboxes: `alexmarques1@alexmarques.local`, `alexmarques2@alexmarques.local`, `alexmarques3@alexmarques.local` 
-<img width="1042" height="571" alt="image" src="https://github.com/user-attachments/assets/df7b96ac-06a4-4ce6-951c-80dfc5dc1685" />
-
 ---
 
 ## 6. DNS: SPF, DKIM i DMARC
@@ -156,9 +150,13 @@ Objectiu:
 - Rebre correu correctament
 - Verificar headers amb DKIM i puntuació d’antispam
 
-Evidències obligatòries:
-- correu rebut a la safata d’entrada mostrant el teu nom complet
-- headers del correu mostrant `DKIM-Signature` i `X-Rspamd-Score`
+Funcionalitats Avançades
+1. Ves a Mailboxes → Edita un usuari
+2. Canvia la quota a 256 MB
+   <img width="1170" height="288" alt="image" src="https://github.com/user-attachments/assets/d1747861-622b-4c4f-8e78-d34c79472f54" />
+
+3. Intenta enviar correus amb adjunts grans per provar el límit
+   <img width="1073" height="832" alt="image" src="https://github.com/user-attachments/assets/9a0cc37f-5a86-4fa6-8fad-43439708c7e3" />
 
 ---
 
@@ -199,16 +197,16 @@ Imatge: `captures/10_sql_users.png`
 (Quan tinguis les imatges, pots incrustar-les així:)
 
 - docker-compose ps  
-![](captures/01_docker_compose_ps.png)
+<img width="1911" height="931" alt="image" src="https://github.com/user-attachments/assets/e8daad61-6da8-46c3-b6a1-38015fb2fbd6" />
 
 - Admin domini  
-![](captures/02_admin_domini.png)
+<img width="1011" height="473" alt="image" src="https://github.com/user-attachments/assets/8bebbe96-4e5c-43c4-8588-8adae8cd6ba0" />
 
 - Mailboxes  
-![](captures/03_mailboxes.png)
+<img width="1042" height="571" alt="image" src="https://github.com/user-attachments/assets/935f1afe-ad69-438a-b1f8-a5514ca47ac6" />
 
 - DKIM  
-![](captures/04_dkim_public_key.png)
+<img width="990" height="448" alt="image" src="https://github.com/user-attachments/assets/4cbbf3b4-19b5-4d7f-979a-f171a7a83822" />
 
 - Thunderbird  
 <img width="1255" height="974" alt="image" src="https://github.com/user-attachments/assets/81d712fe-d277-4e38-90de-30f9a2c4b2f4" />
@@ -222,14 +220,12 @@ Imatge: `captures/10_sql_users.png`
 - Headers  
 <img width="1257" height="1017" alt="image" src="https://github.com/user-attachments/assets/a4141244-13e8-46bd-bb34-a677ef67e0df" />
 
-- SOGo  
-![](captures/08_sogo_ok.png)
-
 - Postfix logs  
-![](captures/09_postfix_logs.png)
+<img width="1257" height="1017" alt="image" src="https://github.com/user-attachments/assets/ee5f0827-1c11-4897-82a2-c8e321008e7e" />
 
-- SQL users  
-![](captures/10_sql_users.png)
+- SQL users i àlies
+<img width="772" height="483" alt="image" src="https://github.com/user-attachments/assets/fcc14b91-11ca-4a31-b586-e31cc12c465c" />
+
 
 ---
 

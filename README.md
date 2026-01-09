@@ -211,13 +211,16 @@ Imatge: `captures/10_sql_users.png`
 ![](captures/04_dkim_public_key.png)
 
 - Thunderbird  
-![](captures/05_thunderbird_config.png)
+<img width="1255" height="974" alt="image" src="https://github.com/user-attachments/assets/81d712fe-d277-4e38-90de-30f9a2c4b2f4" />
 
 - Inbox  
-![](captures/06_inbox_nom.png)
+<img width="1257" height="304" alt="image" src="https://github.com/user-attachments/assets/71cc5f5c-de54-4888-922e-75692304cf68" />
+
+- Àlies
+<img width="1262" height="329" alt="image" src="https://github.com/user-attachments/assets/45ee23bc-083a-4537-bca8-09dc595cfebc" />
 
 - Headers  
-![](captures/07_headers_dkim_rspamd.png)
+<img width="1257" height="1017" alt="image" src="https://github.com/user-attachments/assets/a4141244-13e8-46bd-bb34-a677ef67e0df" />
 
 - SOGo  
 ![](captures/08_sogo_ok.png)

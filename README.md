@@ -109,8 +109,10 @@ Imatge de meu mailcow funcionant amb el meu usuari `admin-alexmarques`.
 
 S’ha de personalitzar com a mínim:
 - Domini: `alexmarques.local`
-- 3 mailboxes: `VOSTRENOM1@alexmarques.local`, `VOSTRENOM2@alexmarques.local`, `VOSTRENOM3@alexmarques.local` (amb els vostres noms)
-- Captures amb el nom complet visible a la sessió o a l’escriptori quan es pugui
+  <img width="1011" height="473" alt="image" src="https://github.com/user-attachments/assets/99da67ea-97f5-4432-b07a-b7e5f64910be" />
+  
+- 3 mailboxes: `alexmarques1@alexmarques.local`, `alexmarques2@alexmarques.local`, `alexmarques3@alexmarques.local` 
+<img width="1042" height="571" alt="image" src="https://github.com/user-attachments/assets/df7b96ac-06a4-4ce6-951c-80dfc5dc1685" />
 
 ---
 

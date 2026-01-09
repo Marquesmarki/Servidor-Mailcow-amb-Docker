@@ -1,0 +1,35 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* ===== FULL WIDTH LAYOUT ===== */
+.page-header,
+.main-content,
+.site-footer {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Mejor lectura en pantallas grandes */
+@media screen and (min-width: 1200px) {
+  .main-content {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+/* Móvil: que no se vea apretado */
+@media screen and (max-width: 768px) {
+  .main-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Evitar columnas estrechas */
+.main-content > * {
+  max-width: 100%;
+}

@@ -1,4 +1,4 @@
-theme: jekyll-theme-cayman
+theme: jekyll-theme-midnight
 title: Servidor Mailcow amb Docker
 description: Pràctica ASIX – Servidor de correu complet amb Mailcow i Docker
 

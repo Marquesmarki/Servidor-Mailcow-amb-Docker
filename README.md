@@ -28,7 +28,7 @@ Domini: alexmarques.local
 
 ## 1. Objectiu
 
-Desplegar Mailcow amb Docker Compose i deixar un servidor de correu funcional per al domini `alexmarques.local`, amb mínim 3 usuaris, enviament/recepció operatius, i configuració i documentació de SPF, DKIM i DMARC. S’ha d’aportar evidència amb captures personalitzades (nom visible) i fitxers de configuració (sense contrasenyes en clar).
+Desplegar Mailcow amb Docker Compose i deixar un servidor de correu funcional per al domini `alexmarques.local`, amb mínim 3 usuaris, enviament/recepció operatius, i configuració i documentació de SPF, DKIM i DMARC. S’ha d’aportar evidència amb captures personalitzades i fitxers de configuració.
 
 ---
 
@@ -160,7 +160,7 @@ Funcionalitats Avançades
 <img src="https://github.com/user-attachments/assets/4cbbf3b4-19b5-4d7f-979a-f171a7a83822" />
 
 - Thunderbird  
-<imgsrc="https://github.com/user-attachments/assets/81d712fe-d277-4e38-90de-30f9a2c4b2f4" />
+<img src="https://github.com/user-attachments/assets/81d712fe-d277-4e38-90de-30f9a2c4b2f4" />
 
 - Inbox  
 <img src="https://github.com/user-attachments/assets/71cc5f5c-de54-4888-922e-75692304cf68" />
@@ -180,87 +180,32 @@ Funcionalitats Avançades
 
 ---
 
-## 9. Fitxers a incloure
+### 9.1 Què és Mailcow i quins components integra?
 
-Dins la carpeta `files/` (recomanat) o a l’arrel del repo:
+Mailcow és una solució completa per muntar un servidor de correu amb Docker. Integra serveis com Postfix (SMTP), Dovecot (IMAP/POP3), Rspamd (antispam), SOGo (webmail) i una interfície web d’administració.
+El principal avantatge és que tot queda integrat i orquestrat, facilitant molt la instal·lació i la gestió del servidor.
 
-### 9.1 mailcow.conf personalitzat
+### 9.2 Què valida SPF, DKIM i DMARC i per què són necessaris?
 
-Fitxer: `files/mailcow.conf`
+· SPF valida quins servidors poden enviar correu en nom del domini.
 
-Requisit:
-- contrasenyes amagades (substituir per `********`)
+· DKIM assegura que el correu prové del domini i que no s’ha modificat.
 
-### 9.2 Captura de docker-compose.yml (primers 50 línies)
+· DMARC defineix què fer si SPF o DKIM fallen i permet rebre informes.
 
-Fitxer:
-- `files/docker-compose_yml_50linies.png` (captura)
-o bé
-- `files/docker-compose_yml_50linies.txt` (si el professor accepta text)
+### 9.3 Què és Rspamd i què significa X-Rspamd-Score?
 
----
+Rspamd és el sistema antispam de Mailcow. Analitza els correus i els assigna una puntuació.
+El X-Rspamd-Score indica si un correu és legítim (puntuació baixa) o sospitós (puntuació alta), i influeix en si es lliura o va a spam.
 
-## 10. Consultes SQL
+### 9.4 Diferències entre webmail i client de correu (Thunderbird)
 
-Objectiu:
-- mostrar usuaris de la base de dades de Mailcow (evidència amb captura)
-
-Incloure:
-- consulta executada
-- resultat visible amb personalització/entorn
-
-Evidència:
-- `captures/10_sql_users.png`
+El webmail permet accedir al correu des del navegador, sense instal·lació, però amb menys opcions.
+Un client de correu com Thunderbird ofereix més control, filtres i comoditat per a l’ús diari, tot i que cal configurar-lo a cada dispositiu.
 
 ---
 
-## 11. Logs
-
-Objectiu:
-- evidenciar l’enviament d’un correu a nivell de MTA (Postfix)
-
-Evidència:
-- `captures/09_postfix_logs.png`
-
-Explicació breu:
-- indicar què es veu al log (origen, destí, cua, status, entrega)
-
----
-
-## 12. Qüestions i explicacions
-
-Incloure respostes amb explicacions detallades (adaptar a les preguntes reals del professor si n’hi ha de concretes). Recomanat:
-
-### 12.1 Què és Mailcow i quins components integra?
-
-Explicació:
-- components típics (MTA, IMAP/POP, antispam, webmail, admin UI, etc.)
-- avantatge de tenir-ho integrat i orquestrat
-
-### 12.2 Què valida SPF, DKIM i DMARC i per què són necessaris?
-
-Explicació:
-- SPF (autorització d’IP/servidor)
-- DKIM (integritat i autenticitat del missatge)
-- DMARC (política i reporting combinant SPF/DKIM)
-
-### 12.3 Què és Rspamd i què significa X-Rspamd-Score?
-
-Explicació:
-- puntuació antispam
-- com interpretar valors típics
-- impacte en la entrega
-
-### 12.4 Diferències entre webmail i client de correu (Thunderbird)
-
-Explicació:
-- avantatges i inconvenients
-- ús en entorns corporatius
-- suport de protocols i cache local
-
----
-
-## 13. Reflexió final (250-350 paraules)
+## 10. Reflexió final (250-350 paraules)
 
 En aquesta pràctica he pogut muntar un servidor de correu complet amb Mailcow utilitzant Docker Compose, i la veritat és que m’ha ajudat a entendre millor com funciona un servei de correu  en un entorn semblant al d’una empresa. El que m’ha agradat més de Mailcow és que integra tots els components necessaris (Postfix, Dovecot, Rspamd, webmail, base de dades, etc.) i els deixa gestionats des d’una sola interfície. Si hagués hagut de configurar cada servei manualment, hauria estat molt més llarg i amb més punts on equivocar-me, sobretot amb certificats, ports i integració entre serveis.
 

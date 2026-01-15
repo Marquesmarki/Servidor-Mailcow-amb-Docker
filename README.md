@@ -17,12 +17,8 @@ Domini: alexmarques.local
 - [6. DNS: SPF, DKIM i DMARC](#6-dns-spf-dkim-i-dmarc)
 - [7. Proves d’enviament i recepció](#7-proves-denviament-i-recepció)
 - [8. Captures de pantalla obligatòries](#8-captures-de-pantalla-obligatòries)
-- [9. Fitxers a incloure](#9-fitxers-a-incloure)
-- [10. Consultes SQL](#10-consultes-sql)
-- [11. Logs](#11-logs)
-- [12. Qüestions i explicacions](#12-qüestions-i-explicacions)
-- [13. Reflexió final (250-350 paraules)](#13-reflexió-final-250-350-paraules)
-- [14. Checklist final d’entrega](#14-checklist-final-dentrega)
+- [9. Qüestions i explicacions](#12-qüestions-i-explicacions)
+- [10. Reflexió final (250-350 paraules)](#13-reflexió-final-250-350-paraules)
 
 ---
 

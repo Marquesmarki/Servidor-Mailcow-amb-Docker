@@ -211,7 +211,3 @@ També he vist diferències entre usar webmail (SOGo) i un client com Thunderbir
 
 Els principals problemes han estat petits detalls: configuració de domini local, ajustar coses de Docker, i revisar bé captures i evidències perquè el treball quedi complet. Com a millores futures, afegiria regles Sieve per automatitzar filtres, provar greylisting més a fons i fer una documentació encara més ordenada per a l’entrega final.
 
-- files/mailcow.conf amb contrasenyes amagades
-- Captura de docker-compose.yml (primeres 50 línies)
-- (Si es demana) PDF final amb portada, captures, DNS, respostes i reflexió
-

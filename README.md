@@ -47,19 +47,6 @@ Desplegar Mailcow amb Docker Compose i deixar un servidor de correu funcional pe
 | Respostes a qüestions correctes | 1,0 |
 | TOTAL | 10,0 |
 
-### Penalitzacions
-
-- -2,0 punts si no hi ha personalització amb `alexmarques`
-- -1,5 punts si DKIM no està configurat o no funciona
-- -1,0 punt si no es poden enviar/rebre correus entre usuaris
-- -0,5 punts si contrasenyes no amagades al document lliurat
-
-### Bonificacions opcionals (màxim +1,5; nota màxima 10,0)
-
-- +0,5 punts per configuració de greylisting funcional
-- +0,5 punts per anàlisi avançada dels headers amb totes les capçaleres explicades
-- +0,5 punts per configuració de regles Sieve per filtrar correus
-
 ---
 
 ## 3. Entorn i prerequisits
